@@ -1,0 +1,86 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    background: #091208;
+    color: #e2e8f0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    flex-direction: column; 
+    gap: 25px;
+}
+h1{ 
+    font-size: 2.5rem; 
+    color: #66ff00; 
+}
+.Scoreboard{
+    display: flex;
+    gap: 30px;
+    font-size: 1.2rem; 
+    font-weight: 600;
+}
+.Score{ 
+    color: #c8dac6; 
+}
+.Score span { 
+    color: #55f838; 
+}
+.Board {
+    display: grid; 
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px); 
+    gap: 8px;
+    background: #1e3b1e; 
+    padding: 8px; 
+    border-radius: 12px;
+}
+.Cell {
+    background: #3b5533; 
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 3rem;
+    font-weight: 700; 
+    cursor: pointer; 
+    transition: 0.2s;
+}
+.Cell:hover { 
+    background: #516947; 
+}
+.Cell.x { 
+    color: #ff0000; 
+}
+.Cell.o { 
+    color: #0051ff; 
+}
+.Cell.win { 
+    background: #73ff00; 
+    color: #165b13; 
+}
+.Status {
+    font-size: 2rem; 
+    font-weight: 600; 
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Btn {
+    background: #55ff00; 
+    color: #0f172a; 
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    font-size: 1rem;
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: 0.2s;
+}
+.Btn:hover { 
+    background: #43e65e; 
+    transform: scale(1.05); 
+}
